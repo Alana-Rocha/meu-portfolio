@@ -1,9 +1,6 @@
+import { Folio } from "@/Pages/Folio";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/Folio")({
-  component: RouteComponent,
+  component: () => <Folio />,
 });
-
-function RouteComponent() {
-  return <div>Hello "/Contatos"!</div>;
-}
