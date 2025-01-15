@@ -2,10 +2,11 @@ import { Menu } from "@/components/Menu";
 import { Button } from "@/components/ui/button";
 import { Flex, Image, Text } from "@chakra-ui/react";
 import QuadradosAvatar from "/assets/images/formas-avatar.svg";
+import { Card } from "@/components/ui/card";
 
 export const Folio = () => {
   return (
-    <Flex w="100%" h="100vh" flexDirection="column" px={10} py={10}>
+    <Flex w="100%" flexDirection="column" px={10} py={10}>
       <Flex justifyContent="space-between" alignItems="center">
         <Text fontSize="3.125rem">
           <Text as="span" color="#8429FE">
@@ -24,7 +25,6 @@ export const Folio = () => {
             A
           </Text>
         </Text>
-        {/* <IconButton src="assets/images/menu.svg" boxSize="50px" mt={4} /> */}
         <Menu />
       </Flex>
 
@@ -51,6 +51,62 @@ export const Folio = () => {
 
         <Flex>
           <Image src={QuadradosAvatar} />
+        </Flex>
+      </Flex>
+
+      <Flex py={5}>
+        <Flex flexDir="column" fontSize="5rem">
+          <Text as="span" color="#8429FE">
+            P
+          </Text>
+          <Text as="span" color="#FFF">
+            R
+          </Text>
+          <Text as="span" color="#8429FE">
+            O
+          </Text>
+          <Text as="span" color="#FFF">
+            J
+          </Text>
+          <Text as="span" color="#8429FE">
+            E
+          </Text>
+          <Text as="span" color="#FFF">
+            T
+          </Text>
+          <Text as="span" color="#8429FE">
+            O
+          </Text>
+          <Text as="span" color="#FFF">
+            S
+          </Text>
+        </Flex>
+
+        <Flex alignItems="center" justifyContent="center" ml="160px" gap={10}>
+          <Card
+            description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
+            title="FlexGamer"
+            src="assets/images/projetos/flexGamer.png"
+            tags={["React", "TypeScript", "ChakraUI"]}
+          />
+          <Card
+            description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
+            title="FlexGamer"
+            src="assets/images/projetos/flexGamer.png"
+            tags={["React", "TypeScript", "ChakraUI"]}
+          />
+          <Card
+            description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
+            title="FlexGamer"
+            src="assets/images/projetos/flexGamer.png"
+            tags={["React", "TypeScript", "ChakraUI"]}
+          />
+          <Card
+            description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
+            title="FlexGamer"
+            src="assets/images/projetos/flexGamer.png"
+            tags={["React", "TypeScript", "ChakraUI"]}
+          />
         </Flex>
       </Flex>
     </Flex>

@@ -9,7 +9,6 @@ import {
 
 export const Menu = () => {
   //   const [isRotated, setIsRotated] = useState(false);
-
   //   const handleClick = () => {
   //     setIsRotated(!isRotated);
   //   };
@@ -21,7 +20,7 @@ export const Menu = () => {
           {<Image src="assets/images/menu.svg" />}
         </IconButton>
       </MenuTrigger>
-      <MenuContent >
+      <MenuContent>
         <MenuItem asChild value="naruto">
           <a
             href="https://www.crunchyroll.com/naruto"
