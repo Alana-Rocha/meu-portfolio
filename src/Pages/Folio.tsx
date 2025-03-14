@@ -1,10 +1,11 @@
 import { Menu } from "@/components/Menu";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { Flex, Image, Text } from "@chakra-ui/react";
 import QuadradosAvatar from "/assets/images/formas-avatar.svg";
-import { Card } from "@/components/ui/card";
+import { SkillsAnimation } from "@/components/SkillsAnimation";
 
-export const Folio = () => {
+const Folio = () => {
   return (
     <Flex w="100%" flexDirection="column" px={10} py={10}>
       <Flex justifyContent="space-between" alignItems="center">
@@ -35,8 +36,8 @@ export const Folio = () => {
         py={12}
       >
         <Flex flexDir="column" alignItems="center">
-          <Text fontSize="4rem">Olá, me chamo Alana.</Text>
-          <Text fontSize="2.25rem">Desenvolvedora Front-End.</Text>
+          <Text fontSize="4rem">Hello, my name is Alana.</Text>
+          <Text fontSize="2.25rem">Front-End Developer and QA.</Text>
           <Button
             w="100%"
             mt={5}
@@ -109,6 +110,34 @@ export const Folio = () => {
           />
         </Flex>
       </Flex>
+
+      <Flex py={5}>
+        <Flex flexDir="column" fontSize="5rem">
+          <Text as="span" color="#8429FE">
+            S
+          </Text>
+          <Text as="span" color="#FFF">
+            K
+          </Text>
+          <Text as="span" color="#8429FE">
+            I
+          </Text>
+          <Text as="span" color="#FFF">
+            L
+          </Text>
+          <Text as="span" color="#8429FE">
+            L
+          </Text>
+          <Text as="span" color="#FFF">
+            S
+          </Text>
+        </Flex>
+
+        <Flex alignItems="center" justifyContent="center" ml="160px" gap={10}>
+          <SkillsAnimation />
+        </Flex>
+      </Flex>
     </Flex>
   );
 };
+export default Folio;
